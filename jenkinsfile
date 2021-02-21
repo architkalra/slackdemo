@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    options { timestamps() }
+
+    stages {
+
+        stage('Start Pipeline Notification') {
+            steps {
+                echo 'Starting Pipeline Job'
+                build (job: 'Start')
+            }
+        }
+
+        stage('End Pipeline Notification') {
+            steps {
+                echo 'Ending Pipeline Job'
+                build (job: 'End')
+            }
+        }
+
+    }   
+}
