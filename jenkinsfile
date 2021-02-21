@@ -11,6 +11,13 @@ pipeline {
                 build (job: 'Start')
             }
         }
+        
+        stage('Creating EC2 Instances') {
+            steps {
+                echo 'Creating EC2 Instances'
+                build (job: 'ec2')
+            }
+        }
 
         stage('End Pipeline Notification') {
             steps {
