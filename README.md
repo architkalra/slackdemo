@@ -1,9 +1,14 @@
 # Guied to run various scripts in this GitHub Repo
 
 ### Scripts
-| Scripts Name Name       | Action  | 
+| Scripts Name       | Action  | 
 |:------------- |:-------------|
-| [e2.py]     | Initial Recipe to kick off the cookbook |
-| [start.py]     | Installes Elasticsearch recipe as a package |
-| [end.py]    | Configures ElasticSearch to custom configurations|
-| [jenkinsfile]     | installs ElasticSearch based and custom plugins |
+| [e2.py]     | Triggers EC2 Instances in AWS Cloud using Python Boto3 Package |
+| [start.py]     | Post's Start Message to Slack Channel using Python Bot |
+| [end.py]    | Post's End Message to Slack Channel using Python Bot|
+| [jenkinsfile]     | Jenkinsfile for CICD Pipeline|
+
+### Python Files can be run locally as well, with the following packages
+
+| Boto3 
+| Exported AWS Credentails in your environment variables
