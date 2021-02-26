@@ -10,5 +10,5 @@
 
 ### Python Files can be run locally as well, with the following packages
 
-| Boto3 
-| Exported AWS Credentails in your environment variables
+Boto3 
+Exported AWS Credentails in your environment variables
