@@ -1,4 +1,4 @@
-# Guied to run various scripts in this GitHub Repo
+# Guide to run various scripts in this GitHub Repo
 
 ### Scripts
 | Scripts Name       | Action  | 
