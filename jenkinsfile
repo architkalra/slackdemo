@@ -1,10 +1,18 @@
+/* 
+Filename:: jenkinsfile
+Author:: Archit Kalra
+Email:: archit.kalra@gmail.com
+*/
+
 pipeline {
     agent any
 
     options { timestamps() }
 
+    // Starting Stage Blocks
     stages {
 
+        // Starting 1st Stage
         stage('Start Pipeline Notification') {
             steps {
                 echo 'Starting Pipeline Job'
@@ -12,13 +20,15 @@ pipeline {
             }
         }
         
+        // Starting 2nd Stage
         stage('Creating EC2 Instances') {
             steps {
                 echo 'Creating EC2 Instances'
                 build (job: 'ec2')
             }
         }
-
+ 
+        // Starting 3rd Stage
         stage('End Pipeline Notification') {
             steps {
                 echo 'Ending Pipeline Job'
